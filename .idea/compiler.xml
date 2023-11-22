@@ -9,5 +9,8 @@
         <module name="weather_skeleton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="weather_forecast" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
