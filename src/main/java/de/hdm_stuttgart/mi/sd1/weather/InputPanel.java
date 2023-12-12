@@ -35,7 +35,7 @@ public class InputPanel extends JPanel implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
         if(e.getKeyCode()==10){
-            System.out.println(cityInput.getText());
+            Forecast.cityNameEntered(cityInput.getText());
 
         }
 
