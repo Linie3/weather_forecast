@@ -19,7 +19,6 @@ public class InputPanel extends JPanel implements KeyListener {
         this.add(cityInput);
         cityInput.addKeyListener(this);
 
-
     }
 
     @Override

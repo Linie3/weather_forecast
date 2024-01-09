@@ -16,7 +16,8 @@ public class CitySelectorWindow extends JPanel implements ActionListener {
         radioButtons = new JRadioButton[cities.length];
 
         for (int i = 0; i < cities.length; i++){
-            radioButtons[i] = new JRadioButton(cities[i].getName());
+            radioButtons[i] = new JRadioButton(cities[i].getName() + ", " + cities[i].getCountry() + " (" + cities[i].getId() + ")");
+            radioButtons[i].addActionListener(this);
         }
         this.setLayout(new GridLayout(radioButtons.length, 1,3,3));
         ButtonGroup buttonGroup = new ButtonGroup();
@@ -31,6 +32,15 @@ public class CitySelectorWindow extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        JRadioButton clickedButton = (JRadioButton) e.getSource();
 
+        String buttonText = clickedButton.getText();
+
+        WeatherDataPanel.currWeatherDataPanel.displayData(getCityId(buttonText));
+
+    }
+
+    static int getCityId(String buttonText){
+        return Integer.parseInt(buttonText.substring(buttonText.indexOf("(")+1, buttonText.indexOf(")")));
     }
 }

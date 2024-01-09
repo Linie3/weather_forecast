@@ -24,6 +24,7 @@ public class Forecast extends JPanel  {
 
 
 InputPanel inputPanel;
+public WeatherDataPanel weatherDataPanel;
 final static String KEY = "35e9fbabc3c58c940ce6f94c3b7dd10e";
   /**
    * <p>Entry starting the application.</p>
@@ -38,14 +39,6 @@ final static String KEY = "35e9fbabc3c58c940ce6f94c3b7dd10e";
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.getContentPane().add(panel);
     frame.setVisible(true);
-
-
-
-
-
-
-
-
 
   }
   public static void saveWeatherData(int id){
@@ -65,7 +58,9 @@ final static String KEY = "35e9fbabc3c58c940ce6f94c3b7dd10e";
     add(inputPanel,BorderLayout.SOUTH);
 
 
-
+    weatherDataPanel = new WeatherDataPanel();
+    weatherDataPanel.setSize(2000, 100);
+    add(weatherDataPanel,BorderLayout.EAST);
   }
   static void cityNameEntered(String cityName){
     ArrayList<City> matchingCities = new ArrayList<>();

@@ -39,6 +39,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -81,11 +82,33 @@
       <workItem from="1701200478782" duration="1324000" />
       <workItem from="1701202048848" duration="1280000" />
       <workItem from="1701263689091" duration="1728000" />
-      <workItem from="1701269296264" duration="5753000" />
+      <workItem from="1701269296264" duration="6135000" />
+      <workItem from="1701284725663" duration="69000" />
+      <workItem from="1701290291397" duration="212000" />
+      <workItem from="1701533776933" duration="14000" />
+      <workItem from="1701874983682" duration="128000" />
+      <workItem from="1702399723704" duration="4336000" />
+      <workItem from="1702407158949" duration="406000" />
+      <workItem from="1702473208555" duration="504000" />
+      <workItem from="1702624252011" duration="622000" />
+      <workItem from="1702991086229" duration="9000" />
+      <workItem from="1703090802437" duration="820000" />
+      <workItem from="1704817911752" duration="5616000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
