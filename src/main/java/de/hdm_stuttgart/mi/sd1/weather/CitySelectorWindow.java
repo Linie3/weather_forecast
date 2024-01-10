@@ -36,7 +36,9 @@ public class CitySelectorWindow extends JPanel implements ActionListener {
 
         String buttonText = clickedButton.getText();
 
+
         WeatherDataPanel.currWeatherDataPanel.displayData(getCityId(buttonText));
+        Forecast.closeSelectorWindow();
 
     }
 
