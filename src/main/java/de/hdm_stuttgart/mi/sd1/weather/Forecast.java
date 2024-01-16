@@ -66,6 +66,7 @@ static JFrame currFrame;
 
     Forecast.currPanel=this;
   }
+
   static void cityNameEntered(String cityName){
     ArrayList<City> matchingCities = new ArrayList<>();
 
@@ -81,7 +82,7 @@ static JFrame currFrame;
     }
 
     CitySelectorWindow panel = new CitySelectorWindow(matchingCities.toArray(new City[0]));
-    JFrame frame = new JFrame("City Selector 3000");
+    JFrame frame = new JFrame("City Selector 3000, nur für 150,00$");
     Forecast.currFrame = frame;
     frame.setSize(400,600);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
