@@ -11,9 +11,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hdm_stuttgart/mi/sd1/weather/Forecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hdm_stuttgart/mi/sd1/weather/Forecast.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hdm_stuttgart/mi/sd1/weather/InputPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hdm_stuttgart/mi/sd1/weather/InputPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hdm_stuttgart/mi/sd1/weather/WeatherDataPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hdm_stuttgart/mi/sd1/weather/WeatherDataPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/weather_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/weather_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/hdm_stuttgart/mi/sd1/weather/CitySelectorWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hdm_stuttgart/mi/sd1/weather/CitySelectorWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/weather_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/weather_data.json" afterDir="false" />
     </list>
     <list id="f7a8b316-3eda-4c58-8fbd-4f10bbc62215" name="Changes by lnia2" comment="" />
     <list id="42d2a5ef-41d5-4ba3-9377-a30d8c0d5ff5" name="Changes by Paul" comment="" />
@@ -116,6 +113,7 @@
       <workItem from="1705503150667" duration="436000" />
       <workItem from="1705615008416" duration="34000" />
       <workItem from="1705869303164" duration="1830000" />
+      <workItem from="1705873220568" duration="1030000" />
     </task>
     <servers />
   </component>

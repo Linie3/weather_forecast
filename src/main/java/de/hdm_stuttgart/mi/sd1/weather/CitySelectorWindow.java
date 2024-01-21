@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
 public class CitySelectorWindow extends JPanel implements ActionListener {
 
     // Instance variables for the CitySelectorWindow class
-    private City[] cities;
-    private JRadioButton[] radioButtons;
+    private City[] cities; //the array that contains all the available cities
+    private JRadioButton[] radioButtons; //The array that holds the buttons for the cities
 
     // Constructor for the CitySelectorWindow class
     public CitySelectorWindow(City[] cities){

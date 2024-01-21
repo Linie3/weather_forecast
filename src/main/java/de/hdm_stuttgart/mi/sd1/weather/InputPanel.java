@@ -18,7 +18,7 @@ public class InputPanel extends JPanel implements KeyListener {
     // Constructor for the InputPanel class
     public InputPanel(){
         // Creating a text field and label for city input
-        cityInput = new JTextField(10);
+        cityInput = new JTextField(10); //Text field for city input
         inputLabel = new JLabel("Please enter your city: ");
 
         // Creating a titled border for the panel

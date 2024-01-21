@@ -15,12 +15,12 @@ import static de.hdm_stuttgart.mi.sd1.weather.Forecast.saveWeatherData;
 public class WeatherDataPanel extends JPanel{
 
     // Instance variables for the WeatherDataPanel class
-    JTable weatherDataTable;
-    JScrollPane sp;
-    JLabel cityName;
+    JTable weatherDataTable; //Main table containing weather data
+    JScrollPane sp; //Panel from scrolling
+    JLabel cityName; //Label that shows the name of the selected city
 
     // Static variable to keep track of the current WeatherDataPanel instance
-    static WeatherDataPanel currWeatherDataPanel;
+    static WeatherDataPanel currWeatherDataPanel; //variable for global access
 
     // Constructor for the WeatherDataPanel class
     public WeatherDataPanel (){
@@ -41,7 +41,6 @@ public class WeatherDataPanel extends JPanel{
             this.remove(cityName);
         }
 
-
         // Saving weather data for the specified city
         saveWeatherData(cityId);
 
@@ -54,20 +53,20 @@ public class WeatherDataPanel extends JPanel{
             throw new RuntimeException(e);
         }
 
-        // Creating a 2D array to store weather data
+        // Creating a 2D array to store weather data for the table
         String[][] weatherData = new String[31][8];
         int row = 0;
         // Populating the weather data array with information from the parsed data
         for(List listElement : weather.getList()){
             weatherData[row][0] = new Date(listElement.getDt()* 1000L).toString();
             weatherData[row][1] = listElement.getMain().getTemp() + " C°";
-            weatherData[row][2] = String.valueOf(listElement.getMain().getHumidity() + " %");
-            weatherData[row][3] = String.valueOf(listElement.getMain().getPressure() + " hPa");
+            weatherData[row][2] = listElement.getMain().getHumidity() + " %";
+            weatherData[row][3] = listElement.getMain().getPressure() + " hPa";
             weatherData[row][4] = listElement.getMain().getTempMin()+ " C°";
             weatherData[row][5] = listElement.getMain().getTempMax()+ " C°";
             row++;
 
-            // Breaking the loop if 31 rows have been processed
+            // Breaking the loop if 31 rows have been processed to not exceed data size
             if (row > 30) {
                 break;
             }

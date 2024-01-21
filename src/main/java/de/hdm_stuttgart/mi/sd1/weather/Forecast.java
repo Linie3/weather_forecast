@@ -13,30 +13,30 @@ import java.net.URL;
 import java.util.ArrayList;
 
 /**
- * Providing terminal based weather forecast
+ * Providing UI based weather forecast
  */
 
-// Class decleration for the Forecast application
+// Class declaration for the main Forecast application
 public class Forecast extends JPanel  {
 
-// Decleration of instance variables
-InputPanel inputPanel;
-public WeatherDataPanel weatherDataPanel;
-final static String KEY = "35e9fbabc3c58c940ce6f94c3b7dd10e";
+// Declaration of instance variables
+InputPanel inputPanel; //Panel that is in the main Window and enables the user to enter a city
+public WeatherDataPanel weatherDataPanel; //Panel that will hold the weather data
+final static String KEY = "35e9fbabc3c58c940ce6f94c3b7dd10e"; //API for open weather
 
 // Static variables for the current panel and current frame
-static Forecast currPanel;
-static JFrame currFrame;
+static Forecast currPanel; //variable that holds the main window content for global accessibility
+static JFrame currFrame; //variable for main window
   /**
    * <p>Entry starting the application.</p>
    *
    * @param args Yet unused.
    */
 
-  // maine method to start the Application
+  // main method to start the application
   public static void main(String[] args) {
 
-    //Creating an instance of Forecast panel and JFrame
+    //Creating an instance of main Forecast panel and JFrame
     Forecast panel = new Forecast();
     JFrame frame = new JFrame("weather_forecast");
     frame.setSize(1100,800);
@@ -45,7 +45,7 @@ static JFrame currFrame;
     frame.setVisible(true);
   }
 
- // MEthod to save weather data for a specific Cityid
+ // Method to save weather data for a specific Cityid to a file from the api
   public static void saveWeatherData(int id){
     String url = "https://api.openweathermap.org/data/2.5/forecast?lang=de&APPID="+ KEY +"&units=metric&id="+id;
     try {
@@ -59,7 +59,7 @@ static JFrame currFrame;
 
   // Constructor for the Forecast class
   public Forecast(){
-    inputPanel = new InputPanel();
+    inputPanel = new InputPanel(); //setting up the window
     setLayout(new BorderLayout());
     add(inputPanel,BorderLayout.SOUTH);
 
@@ -88,7 +88,7 @@ static JFrame currFrame;
       return;
     }
 
-    // Creating and display a city selector window with all of the matching cities
+    // Creating and display a city selector window with all the matching cities
     CitySelectorWindow panel = new CitySelectorWindow(matchingCities.toArray(new City[0]));
     JFrame frame = new JFrame("City Selector 3000, nur für 150,00$");
     Forecast.currFrame = frame;
