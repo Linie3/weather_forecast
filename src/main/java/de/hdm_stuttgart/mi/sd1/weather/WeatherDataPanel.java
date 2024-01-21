@@ -81,7 +81,7 @@ public class WeatherDataPanel extends JPanel{
         weatherDataTable.setEnabled(false);
         weatherDataTable.setPreferredSize(new Dimension(2000,500));
 
-        // Creating a JScrollPane to display the JTable with a scroll bar
+        // Creating a JScrollPane to display the JTable with a scroll bar when you lower the height of the window
         sp = new JScrollPane();
         sp.getViewport().add(weatherDataTable, null);
 
